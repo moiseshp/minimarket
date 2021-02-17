@@ -8,7 +8,7 @@ const boxShadow = (color: string) => {
   return `8px 9px 17px ${color}`
 }
 
-const backgroundColor = '#FAFAFA'
+const backgroundColor = '#f5f5f5'
 const borderRadius = 30
 const buttonPadding = 20
 
@@ -67,6 +67,11 @@ theme.overrides = {
         borderColor: 'rgba(0, 0, 0, 0.8)',
         borderWidth: 2,
       },
+    }
+  },
+  MuiLinearProgress: {
+    root: {
+      height: 2,
     }
   },
   MuiButton: {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { store } from 'redux/store'
 import { responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles'
@@ -15,7 +15,7 @@ const App = () => {
     <Provider store={store}>
       <ThemeProvider theme={muiTheme}>
         <CssBaseline />
-        <BrowserRouter>
+        <HashRouter basename="/">
           <Switch>
             <Route path="/" component={pages.Home} exact />
             <Route path="/uikit" component={pages.Uikit} exact />
@@ -23,7 +23,7 @@ const App = () => {
             <ShopRoute path="/:shop/explore" component={pages.Explore} exact />
             <Route component={pages.NotFound} />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </ThemeProvider>
     </Provider>
   )

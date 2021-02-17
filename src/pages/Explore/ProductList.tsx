@@ -36,7 +36,7 @@ const ProductList = () => {
 
   return (
     <Container>
-      {items.map(item => (
+      {items.map((item: any) => (
         <Box key={item.id} mb={1}>
           <ProductCard item={item} />
         </Box>

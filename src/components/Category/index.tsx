@@ -8,10 +8,7 @@ import ICategory from 'redux/types/category'
 // import List from './List'
 // import View from './View'
 
-type Props = {
-  items: Array<ICategory>
-}
-const Category: React.RC<Props> = () => {
+const Category: React.FC = () => {
   const history = useHistory()
   const classes = useStyles()
   const { shop } = useSelector((state: any) => state)

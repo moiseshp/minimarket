@@ -21,9 +21,9 @@ const AppBar: React.FC<Props> = ({ children, showBackButton, fullWidth }) => {
   return (
     <React.Fragment>
       <Navbar 
-        className={classes.root}
-        color="transparent"
+        color="default"
         position="fixed"
+        elevation={0}
       >
         <Toolbar className={classes.toolbar}>
           {showBackButton ? (

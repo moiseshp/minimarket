@@ -19,7 +19,7 @@ const CollectionHeader = ({ title, link }: Props) => {
         <div style={{ flexGrow: 1}} />
         {link && (
           <>
-            <Button to={link}>
+            <Button>
               <Box fontSize={12}>VER TODO</Box>
             </Button>
             <ChevronRight fontSize="small" />

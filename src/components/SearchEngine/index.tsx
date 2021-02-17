@@ -11,7 +11,7 @@ const SearchEngine = () => {
   const classes = useStyles()
   const { shop } = useSelector((state: any) => state)
   const dispatch = useDispatch()
-  const input = React.useRef()
+  const input = React.useRef<any>(null)
 
   const handleFocus = () => {
     dispatch(shopActions.store({

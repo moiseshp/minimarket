@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     cardMedia: ({ post }: any) => ({
       height: post ? cardMediaHeight : '100%',
+      backgroundSize: 'contain',
       borderRadius: 5,
     }),
     gridMedia: {
@@ -40,7 +41,7 @@ type Props = {
   post?: Boolean | undefined
 }
 
-const ProductCard = ({ item, post }: Props) => {
+const ProductCard: React.FC<Props> = ({ item, post }) => {
   const classes = useStyles({ post })
   return (
     <Card>
@@ -50,8 +51,8 @@ const ProductCard = ({ item, post }: Props) => {
             classes={{
               root: classes.cardMedia,
             }}
-            image={`https://loremflickr.com/300/300?random=${item.id}`}
-            title={item.author}
+            image={`images/${item.id}.webp`}
+            title={item.title}
           />
         </Grid>
         <Grid item xs={post ? 12 : 8}>
@@ -61,14 +62,14 @@ const ProductCard = ({ item, post }: Props) => {
               color="textSecondary"
               noWrap
             >
-              {item.width} x {item.height}
+              {item.category}
             </Typography>
             <Typography
               variant="body2"
               gutterBottom
               noWrap
             >
-              <strong>{item.author}</strong>
+              <strong>{item.title}</strong>
             </Typography>
             <Grid container>
               <Grid item xs={5}>
@@ -79,10 +80,10 @@ const ProductCard = ({ item, post }: Props) => {
                   noWrap
                   className={classes.lineThrough}
                 >
-                  S/ {item.id}
+                  S/ {item.price}
                 </Typography>
                 <Typography variant="body1" noWrap>
-                  <strong>S/ {item.width}</strong>
+                  <strong>S/ {item.price}</strong>
                 </Typography>
               </Grid>
               <Grid item xs={7}>

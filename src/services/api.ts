@@ -3,11 +3,11 @@ import axios from 'axios'
 const api = axios.create({
   // baseURL: `http://jsonplaceholder.typicode.com/`
   // baseURL: `https://api.instantwebtools.net/v1/`
-  baseURL: `https://picsum.photos/v2/`
+  baseURL: 'https://fakestoreapi.com/'
 })
 
 export const ProductService = {
-  index: (params) => api.get('list?limit=15', { params })
+  index: (params) => api.get('products?limit=20', { params })
 }
 
 export const User = {

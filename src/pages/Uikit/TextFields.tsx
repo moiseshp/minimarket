@@ -22,7 +22,7 @@ const TextFields = () => {
       <TextField
         variant="filled" 
       />
-      <TextField disableUnderline label="Standard" />
+      <TextField label="Standard" />
     </form>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { Box, Button, Container, Toolbar, Typography } from '@material-ui/core'
 import { ChevronRight } from '@material-ui/icons'
   
@@ -7,6 +8,7 @@ type Props = {
   link?: String
 }
 const CollectionHeader = ({ title, link }: Props) => {
+  const history = useHistory()
   return (
     <Container disableGutters>
       <Toolbar variant="dense">
@@ -19,7 +21,7 @@ const CollectionHeader = ({ title, link }: Props) => {
         <div style={{ flexGrow: 1}} />
         {link && (
           <>
-            <Button>
+            <Button onClick={() => history.push('/labodegadelachinola/explore')}>
               <Box fontSize={12}>VER TODO</Box>
             </Button>
             <ChevronRight fontSize="small" />

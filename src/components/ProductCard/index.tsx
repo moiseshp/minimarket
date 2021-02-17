@@ -41,6 +41,8 @@ type Props = {
   post?: Boolean | undefined
 }
 
+const photo = 'https://raw.githubusercontent.com/moiseshp/minimarket/master/public/images/'
+
 const ProductCard: React.FC<Props> = ({ item, post }) => {
   const classes = useStyles({ post })
   return (
@@ -51,7 +53,7 @@ const ProductCard: React.FC<Props> = ({ item, post }) => {
             classes={{
               root: classes.cardMedia,
             }}
-            image={`images/${item.id}.webp`}
+            image={`${photo}${item.id}.webp`}
             title={item.title}
           />
         </Grid>

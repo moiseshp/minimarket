@@ -3,6 +3,7 @@ import { createStyles, Theme, makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import { Fab, Toolbar, Box } from '@material-ui/core'
 import { ArrowUpwardOutlined, AccountBalanceWalletOutlined, ShoppingBasketOutlined } from '@material-ui/icons'
+import Info from './Info'
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     appBar: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
 const Checkout = () => {
   const classes = useStyles()
   return (
-    <>
+    <React.Fragment>
       <Toolbar />
       <AppBar position="fixed" color="primary" className={classes.appBar}>
         <Toolbar>
@@ -38,13 +39,14 @@ const Checkout = () => {
             <ArrowUpwardOutlined />
           </Fab>
           <div className={classes.grow} />
-          <Box fontWeight="fontWeightBold" mr={2}>
+          {/* <Box fontWeight="fontWeightBold" mr={2}>
             S/ 123.00
-          </Box> 
+          </Box> */}
+          <Info />
           <AccountBalanceWalletOutlined /> 
         </Toolbar>
       </AppBar>
-    </>
+    </React.Fragment>
   )
 }
 

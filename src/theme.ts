@@ -1,4 +1,4 @@
-import { createMuiTheme } from '@material-ui/core/styles'
+import { unstable_createMuiStrictModeTheme as createMuiTheme  } from '@material-ui/core/styles'
 
 // const gradient = (theme: any, color: string) => {
 //   return `linear-gradient(-10deg, ${theme.palette[color].main} 10%, ${theme.palette[color].light} 80%)`

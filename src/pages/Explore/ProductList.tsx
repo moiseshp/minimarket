@@ -30,6 +30,8 @@ const ProductList = () => {
         setItems(response.data)
         setLoading(false)
       })
+
+    return () => (setItems([]))
   }, [category, search])
 
   if (loading) return <LinearProgress />

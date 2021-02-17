@@ -36,11 +36,11 @@ const Shop = () => {
       </Box>
 
       <Box mt={2}>
-        <CollectionHeader title="Destacados" />
+        <CollectionHeader title="Destacados" link="/" />
         <Collection page={1} />
       </Box>
 
-      <CollectionHeader title="Ofertones" />
+      <CollectionHeader title="Ofertones" link="/" />
       <Collection page={5} />
 
       <Container>

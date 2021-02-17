@@ -37,16 +37,17 @@ const Collection : React.FC<Props>= ({ page }) => {
         setItems(response.data)
         setLoading(false)
       })
+    return () => (setItems([]))
   }, [])
 
   if (loading) return <Spinner p={1} />
 
   return (
     <SliderContainer>
-      {items.map((item: IProduct) => (
+      {items.map((item: any) => (
         <Box
           minWidth={boxWidth}
-          key={item.name}
+          key={item.id}
           className={classes.item}
           mr={1}
           pb={3}

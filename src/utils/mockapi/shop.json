@@ -1,6 +1,7 @@
 {
+  "api": "https://fakestoreapi.com/docs",
   "uuid": "4343w-2ss23ds-232-sd232",
-  "name": "La tienda de la Chinola",
+  "name": "La tienda de Mariafé",
   "slug": "tiendadelachinola",
   "status": 1,
   "address": "Calle Los Negocios 213, Surquillo",

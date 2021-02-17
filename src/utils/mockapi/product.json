@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "uuid": "1",
+      "name": "Leche en caja 1L",
+      "photo": {
+        "small": "https://wongfood.vteximg.com.br/arquivos/ids/357664-750-750/Leche-Entera-UHT-Cuisine---Co-Caja-1-Litro-1-121028312.jpg",
+        "medium": "",
+        "large": ""
+      },
+      "description": "Lorem ipsum dolor",
+      "price": "4.50",
+      "crossedOutPrice": "4.80"
+    },
+    {
+      "uuid": "2",
+      "name": "Papa amarilla 1kg",
+      "photo": {
+        "small": "https://www.ventadefrutasyverduras.com.mx/wp-content/uploads/2019/10/Papa-Amarrilla-distribuidor-de-verduras-en-el-Estado-de-M%C3%A9xico..jpeg",
+        "medium": "",
+        "large": ""
+      },
+      "description": "Sit amet sicus dot",
+      "price": "3.50",
+      "crossedOutPrice": "3.80"
+    },
+    {
+      "uuid": "3",
+      "name": "Arroz Costeño 1Kg",
+      "photo": {
+        "small": "https://wongfood.vteximg.com.br/arquivos/ids/158628-1000-1000/Arroz-Arborio-Costeno-Bolsa-750-g-79473.jpg",
+        "medium": "",
+        "large": ""
+      },
+      "description": "Ipsum dolor site amet",
+      "price": "2.80",
+      "crossedOutPrice": "3.20"
+    },
+    {
+      "uuid": "4",
+      "name": "Azúcar Rubia 1Kg",
+      "photo": {
+        "small": "https://cdn.shopify.com/s/files/1/0275/5143/2784/products/CASAGRANDEAZUCARRUBIAX1KG_1024x.jpg",
+        "medium": "",
+        "large": ""
+      },
+      "description": "Habiques ter mydie deef",
+      "price": "4.50",
+      "crossedOutPrice": "4.80"
+    }
+  ],
+  "paginate": {
+    "current_page": 0,
+    "last_page": 0,
+    "path": 0,
+    "per_page": 0,
+    "total": 0
+  }
+}

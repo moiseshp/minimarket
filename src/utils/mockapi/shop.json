@@ -1,0 +1,29 @@
+{
+  "uuid": "4343w-2ss23ds-232-sd232",
+  "name": "La tienda de la Chinola",
+  "slug": "tiendadelachinola",
+  "status": 1,
+  "address": "Calle Los Negocios 213, Surquillo",
+  "description": "Hello world",
+  "deliveryTime": "08:23 - 18:23",
+  "owner": {
+    "name": "Moisés Eduardo",
+    "fullName": "Moisés Eduardo Huaringa Pecho",
+    "phone": "7958731",
+    "mobile": "999999999"
+  },
+  "category": {
+    "items": [
+      { "uuid": "all", "name": "Todo", "slug": "all" },
+      { "uuid": "1", "name": "Verduras", "slug": "verduras" },
+      { "uuid": "2", "name": "Abarrotes", "slug": "abarrotes" },
+      { "uuid": "3", "name": "Regalos", "slug": "regalos" },
+      { "uuid": "4", "name": "Hamburguesas", "slug": "hamburguesas" },
+      { "uuid": "5", "name": "Hogar", "slug": "hogar" },
+      { "uuid": "6", "name": "Higiene", "slug": "higiene" },
+      { "uuid": "7", "name": "Bebés", "slug": "bebes" },
+      { "uuid": "8", "name": "Diversión", "slug": "diversión" },
+      { "uuid": "9", "name": "Postres", "slug": "postres" }
+    ]
+  }
+}

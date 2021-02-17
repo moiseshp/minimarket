@@ -1,0 +1,92 @@
+{
+  "loading": false,
+  "error": "",
+  "actualPaymentType": "",
+  "assorment": {
+    "loading": false,
+    "lote": "5eb092ab170f6e45304702db",
+    "version": 1255
+  },
+  "datos": {
+    "nombres": "Moisés Huaringa Dpto. 1510",
+    "celular": "949399454",
+    "dni": "41157679",
+    "tipoPago": "transferencia"
+  },
+  "errorsCode": {
+    "data":[],
+    "loading": false,
+    "error": ""
+  },
+  "paymentTypes":  {
+    "data": [
+      {
+        "_id": "pt002",
+        "nombre": "YAPE",
+        "type": "yape",
+        "detail": {
+          "nro_yape": "957208436",
+          "titular_yape": "AIYUAPP SAC" 
+        }
+      },
+      {
+        "_id": "pt003",
+        "nombre": "Transferencia Bancaria BCP",
+        "type": "transferencia",
+        "detail": { 
+          "nombre": "Bruno Llave",
+          "apellido": "Ponce De León",
+          "celular": "970006140",
+          "banco": {
+            "titular": "AIYUAPP SAC",
+            "nombre": "BANCO DE CREDITO DEL PERU",
+            "cc": "193-2608183-0-82"
+          }
+        }
+      },
+      {
+        "_id": "pt001",
+        "nombre": "Efectivo contra-entrega",
+        "type": "efectivo",
+        "detail": {
+          "nombre": "Bruno Llave",
+          "apellido": "Ponce De León",
+          "celular": "970006140"
+        }
+      }
+    ]
+  },
+  "products": {
+    "data": [
+      { 
+        "_id": "60201de4c631365a9c5b0a4a",
+        "sku": 7
+      }
+    ],
+    "tienda": {
+      "owner": {
+        "config": {
+          "mostrar_precio_tachado": 1
+        },
+        "delivery": "2021-02-13 18:00",
+        "_id": "5f15b6ec5f290413a08d1584",
+        "nombre": "Corina Del Rosario",
+        "apellido": "Vivanco Donayre",
+        "celular": "990325631",
+        "direccion": "Calle 28 de julio MZ S1 Lt 5 6 de noviembre 5 , Los Olivos",
+        "nombre_tienda": "Rosario y sus gemelos",
+        "grupo_wsp": "", 
+        "status": "open",
+        "status_code": 0,
+        "tipo": "independiente"
+      },
+      "loading": false,
+      "codigo": "rosarioysusgemelos",
+      "error": ""
+    },
+    "_persist": {
+      "version": -1,
+      "rehydrated": true
+    }
+  }
+}

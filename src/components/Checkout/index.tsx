@@ -2,8 +2,9 @@ import React from 'react'
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import { Fab, Toolbar, Box } from '@material-ui/core'
-import { ArrowUpwardOutlined, AccountBalanceWalletOutlined, ShoppingBasketOutlined } from '@material-ui/icons'
-import Info from './Info'
+import { ShoppingBasketOutlined } from '@material-ui/icons'
+import Cart from './Cart'
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     appBar: {
@@ -31,19 +32,17 @@ const Checkout = () => {
       <Toolbar />
       <AppBar position="fixed" color="primary" className={classes.appBar}>
         <Toolbar>
-          <ShoppingBasketOutlined /> 
+          {/* <ShoppingBasketOutlined />  */}
           <Box fontWeight="fontWeightBold" ml={2}>
             10 Artículos
           </Box> 
-          <Fab color="secondary" aria-label="add" className={classes.fabButton}>
-            <ArrowUpwardOutlined />
-          </Fab>
+          <Cart />
           <div className={classes.grow} />
-          {/* <Box fontWeight="fontWeightBold" mr={2}>
+          <Box fontWeight="fontWeightBold" mr={2}>
             S/ 123.00
-          </Box> */}
-          <Info />
-          <AccountBalanceWalletOutlined /> 
+          </Box>
+          {/* <Info /> */}
+          {/* <AccountBalanceWalletOutlined />  */}
         </Toolbar>
       </AppBar>
     </React.Fragment>

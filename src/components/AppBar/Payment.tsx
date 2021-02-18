@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Button, Container, Drawer, IconButton, Typography } from '@material-ui/core'
-import { WhatsApp } from '@material-ui/icons'
+import { PaymentOutlined } from '@material-ui/icons'
 
 
 // const phone = '+51949399454'
@@ -8,17 +8,17 @@ import { WhatsApp } from '@material-ui/icons'
 // const whatsapp = `http://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(text)}`
 // href={whatsapp}
 
-const Contact = () => {
+const Payment = () => {
   const [state, setState] = React.useState(false)
 
   return (
-    <div>
+    <React.Fragment>
       <IconButton 
         color="inherit" 
         edge="end"
         onClick={() => setState(true)}
       >
-        <WhatsApp />
+        <PaymentOutlined />
       </IconButton>
       <Drawer
         anchor="bottom"
@@ -28,48 +28,41 @@ const Contact = () => {
         <Box pb={6} pt={5}>
           <Container>
             <Box display="flex">
-              <WhatsApp fontSize="large" color="primary" />
+              <PaymentOutlined fontSize="large" color="primary" />
               <Box pl={2}>
                 <Typography variant="h3" color="primary">
-                  <strong>Hola!</strong>
+                  <strong>Pagos</strong>
                 </Typography>
                 <Typography variant="body2">
-                  Soy <strong>Don Mochito</strong> llámame o envíame un mensajito si tienes alguna consulta.
+                  Puedes pagar al recibir o recoger tu producto. Aceptamos todas las tarjetas de crédito y también transferencias.
                 </Typography>
-                <Box mb={2} mt={3}>
-                  <Button variant="outlined" size="large" color="inherit" >
-                    <strong>Llamar &nbsp; 949 399 454 </strong>
-                  </Button>
-                </Box>
-                <Box mb={3}>
-                  <Button variant="outlined" color="inherit" size="large">
-                    <WhatsApp color="inherit" /> &nbsp; Whatsapp
-                  </Button>
-                </Box>
 
-                <Box mb={2}>
+                <Box my={2}>
                   <Typography component="div" variant="body2">
                     <strong>
-                      <Typography component="span" color="primary">+</Typography> Horario de atención
+                      <Typography component="span" color="primary">+</Typography> Yape - BCP
                     </strong>
                     <br />
                     <Box ml="15px">
-                      L-V 9:30 AM - 18:00
+                      Moisés Eduardo Huaringa Pecho
+                      <br />
+                      949 399 454
+                      <br />
+                      Transferencia: 001-003030-1232-232
+                      CCI: 001-003030-1232-232
                     </Box>
                   </Typography>
                 </Box>
 
                 <Typography component="div" variant="body2">
                   <strong>
-                    <Typography component="span" color="primary">+</Typography> Zonas de reparto
+                    <Typography component="span" color="primary">+</Typography> PLIN - BBVA, Interbank y Banbif
                   </strong>
                   <br />
                   <Box ml="15px">
-                    Pedido mínimo S/30.00
+                    Moisés Eduardo Huaringa Pecho
                     <br />
-                    Peso mínimo de venta 250gr en Quesos y Jamones
-                    <br />
-                    DELIVERY GRATIS en Surquillo 
+                    949 399 454
                   </Box>
                 </Typography>
               </Box>
@@ -78,8 +71,8 @@ const Contact = () => {
         </Box>
         <Box style={{ background: '#FF4700' }} height={6} />
       </Drawer>
-    </div>
+    </React.Fragment>
   )
 }
 
-export default Contact
+export default Payment

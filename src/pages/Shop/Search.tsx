@@ -15,14 +15,14 @@ const Search = () => {
   const dispatch = useDispatch()
 
   const handleFocus = () => {
-    history.push('/labodegadelachinola/explore')
+    history.push('/latiendademariafe/explore')
     dispatch(shopActions.store({
       searchIsActive: true
     }))
   }
 
   const handleGoToExplore = () => {
-    history.push('/labodegadelachinola/explore')    
+    history.push('/latiendademariafe/explore')    
   }
 
   return (

@@ -14,7 +14,7 @@ const Category: React.FC = () => {
   const { shop } = useSelector((state: any) => state)
 
   const handleSubmit = (category) => {
-    history.push(`/labodegadelachinola/explore?category=${category}`)    
+    history.push(`/latiendademariafe/explore?category=${category}`)    
   }
 
   const color = (item) => item.uuid === 'all' ? 'secondary' : 'inherit' 

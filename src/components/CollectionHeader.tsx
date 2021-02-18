@@ -21,7 +21,7 @@ const CollectionHeader = ({ title, link }: Props) => {
         <div style={{ flexGrow: 1}} />
         {link && (
           <>
-            <Button onClick={() => history.push('/labodegadelachinola/explore')}>
+            <Button onClick={() => history.push('/latiendademariafe/explore')}>
               <Box fontSize={12}>VER TODO</Box>
             </Button>
             <ChevronRight fontSize="small" />

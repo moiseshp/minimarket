@@ -34,7 +34,7 @@ const SearchEngine = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     input.current.blur()
-    history.push(`/labodegadelachinola/explore?search=${shop.searchText}`)
+    history.push(`/latiendademariafe/explore?search=${shop.searchText}`)
     // console.info(input)
     // console.info(shop.searchText)
     // dispatch(shopActions.store({

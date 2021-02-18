@@ -18,7 +18,7 @@ const ShopRoute = ({ component, ...rest }) => {
     return <Spinner p={4} />
   }
   
-  if (params.shop === 'labodegadelachinola') {
+  if (params.shop === 'latiendademariafe') {
     return (
       <Route {...rest} component={component} />
     )

@@ -4,8 +4,9 @@ import * as shopActions from 'redux/actions/shop'
 import { useHistory } from 'react-router-dom'
 import { useStyles } from './AppBar.styles'
 import { AppBar as Navbar, IconButton, Toolbar } from '@material-ui/core'
-import { ArrowBack as ArrowBackIcon, PaymentOutlined, Storefront, WhatsApp } from '@material-ui/icons'
+import { ArrowBack as ArrowBackIcon, Storefront } from '@material-ui/icons'
 import Contact from './Contact'
+import Payment from './Payment'
 
 type Props = {
   children?: any,
@@ -19,14 +20,14 @@ const AppBar: React.FC<Props> = ({ children, showBackButton, fullWidth }) => {
   const dispatch = useDispatch()
 
   const handleBack = () => {
-    history.push('/labodegadelachinola')
+    history.push('/latiendademariafe')
     dispatch(shopActions.store({
       searchText: ''
     }))
   }
   return (
     <React.Fragment>
-      <Navbar 
+      <Navbar
         color="default"
         position="fixed"
         elevation={0}
@@ -48,9 +49,7 @@ const AppBar: React.FC<Props> = ({ children, showBackButton, fullWidth }) => {
             <React.Fragment>
               <div style={{ flexGrow: 1 }} />
               <Contact />
-              <IconButton aria-label="menu" edge="end" color="inherit">
-                <PaymentOutlined />
-              </IconButton>
+              <Payment />
             </React.Fragment>          
           )}        
         </Toolbar>

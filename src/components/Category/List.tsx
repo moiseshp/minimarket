@@ -1,7 +1,7 @@
 import React from 'react'
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles'
 import { Box, Button } from '@material-ui/core'
-import ICategory from '../../redux/types/category'
+import { ICategory } from 'redux/types/category'
 const gutter = 16
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

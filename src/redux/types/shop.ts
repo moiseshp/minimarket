@@ -1,9 +1,9 @@
-import IOwner from './owner'
-import ICategory from './category'
+import { IOwner } from './owner'
+import { ICategory } from './category'
 export const GET_SHOP = 'GET_SHOP'
 export const STORE_SHOP = 'STORE_SHOP'
 
-export interface ShopState {
+export interface IShop {
   uuid?: string
   name?: string
   slug?: string
@@ -27,7 +27,7 @@ interface GetShopAction {
 
 interface StoreShopAction {
   type: typeof STORE_SHOP
-  payload: ShopState
+  payload: IShop
 }
 
 export type ShopActionTypes = GetShopAction | StoreShopAction

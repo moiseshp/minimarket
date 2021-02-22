@@ -1,7 +1,7 @@
 import { put, call, takeLatest } from 'redux-saga/effects'
-import { GET_SHOP } from '../types/shop'
-import * as shopActions from '../actions/shop'
-import mockupShop from '../../utils/mockapi/shop.json'  
+import { GET_SHOP } from 'redux/types/shop'
+import * as shopActions from 'redux/actions/shop'
+import mockupShop from 'utils/mockapi/shop.json'  
 function* getShop() {
   try {
     const shop = yield call(() => mockupShop)

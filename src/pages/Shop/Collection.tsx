@@ -5,7 +5,7 @@ import { Box } from '@material-ui/core'
 import Spinner from 'components/Spinner'
 import SliderContainer from 'components/SliderContainer'
 import ProductCard from 'components/ProductCard'
-import IProduct from 'redux/types/product'
+// import { IProduct } from 'redux/types/product'
 
 const gutter = 16
 const boxWidth = 240

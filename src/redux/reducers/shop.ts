@@ -2,10 +2,10 @@ import {
   GET_SHOP,
   STORE_SHOP,
   ShopActionTypes,
-  ShopState,
+  IShop,
 } from '../types/shop'
 
-const initialState: ShopState = {
+const initialState: IShop = {
   uuid: '',
   name: '',
   slug: '',
@@ -23,10 +23,10 @@ const initialState: ShopState = {
   hasError: false
 }
 
-export default function app(
+export default function shop(
   state = initialState, 
   action: ShopActionTypes
-): ShopState {
+): IShop {
   switch (action.type) {
     case GET_SHOP:
       return {

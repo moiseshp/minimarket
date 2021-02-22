@@ -69,7 +69,7 @@ const Payment = () => {
             </Box>
           </Container>
         </Box>
-        <Box style={{ background: '#FF4700' }} height={6} />
+        <Box bgcolor="primary" height={6} />
       </Drawer>
     </React.Fragment>
   )

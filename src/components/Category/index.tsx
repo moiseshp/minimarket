@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { useStyles } from './Category.styles'
 import { Box, Button } from '@material-ui/core'
 import SliderContainer from 'components/SliderContainer'
-import ICategory from 'redux/types/category'
+import { ICategory } from 'redux/types/category'
 // import List from './List'
 // import View from './View'
 

@@ -1,7 +1,8 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
-import { Fab, Toolbar, Box } from '@material-ui/core'
+import { Button, Fab, Toolbar, Box } from '@material-ui/core'
 import { ShoppingBasketOutlined } from '@material-ui/icons'
 import Cart from './Cart'
 
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
 )
 
 const Checkout = () => {
+  const { cart } = useSelector((state: any) => state)
   const classes = useStyles()
   return (
     <React.Fragment>
@@ -33,14 +35,28 @@ const Checkout = () => {
       <AppBar position="fixed" color="primary" className={classes.appBar}>
         <Toolbar>
           {/* <ShoppingBasketOutlined />  */}
-          <Box fontWeight="fontWeightBold" ml={2}>
-            10 Artículos
+          <Box>
+            {cart.products.length} Artículos en la canasta
+            <br />
+            <strong>
+              Total S/ {cart.payment.toFixed(2)}
+            </strong>
           </Box> 
-          <Cart />
+          {/* <Cart /> */}
           <div className={classes.grow} />
-          <Box fontWeight="fontWeightBold" mr={2}>
-            S/ 123.00
-          </Box>
+          <Button
+            color="secondary"
+            variant="contained"
+            disableElevation
+            size="small"
+            startIcon={
+              <ShoppingBasketOutlined />
+            }
+          >
+            Ver canasta
+          </Button>
+          {/* <Box fontWeight="fontWeightBold" mr={2}>
+          </Box> */}
           {/* <Info /> */}
           {/* <AccountBalanceWalletOutlined />  */}
         </Toolbar>

@@ -8,8 +8,8 @@ import {
   Grid,
   Typography
 } from '@material-ui/core'
-import ButtonAdd from './ButtoAdd'
-import IProduct from 'redux/types/product'
+import ButtonAdd from './ButtonAdd'
+import { IProduct }from 'redux/types/product'
 
 const cardMediaHeight = 160
 const useStyles = makeStyles((theme: Theme) =>
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme: Theme) =>
 )
 
 type Props = {
-  item: any,
+  item: IProduct,
   post?: Boolean | undefined
 }
 
@@ -90,7 +90,7 @@ const ProductCard: React.FC<Props> = ({ item, post }) => {
               </Grid>
               <Grid item xs={7}>
                 <Box mt={1}>
-                  <ButtonAdd />
+                  <ButtonAdd item={item}/>
                 </Box>
               </Grid>
             </Grid>

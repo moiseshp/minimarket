@@ -2,7 +2,7 @@ import {
   GET_SHOP,
   STORE_SHOP,
   ShopActionTypes,
-  ShopState,
+  IShop,
 } from '../types/shop'
 
 export function getShop(): ShopActionTypes {
@@ -11,7 +11,7 @@ export function getShop(): ShopActionTypes {
   }
 }
 
-export function store(payload: ShopState): ShopActionTypes {
+export function store(payload: IShop): ShopActionTypes {
   return {
     type: STORE_SHOP,
     payload
